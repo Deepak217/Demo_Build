@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="149234" started-at="2018-09-04T06:36:36Z" finished-at="2018-09-04T06:39:06Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="149234" started-at="2018-09-04T06:36:36Z" finished-at="2018-09-04T06:39:06Z">
+      <class name="impactQA.DemoTest">
+        <test-method status="PASS" signature="IntilizeBrowser()[pri:0, instance:impactQA.DemoTest@64763e49]" name="IntilizeBrowser" is-config="true" duration-ms="114145" started-at="2018-09-04T06:36:37Z" finished-at="2018-09-04T06:38:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- IntilizeBrowser -->
+        <test-method status="PASS" signature="verifyTitle()[pri:0, instance:impactQA.DemoTest@64763e49]" name="verifyTitle" duration-ms="138" started-at="2018-09-04T06:38:31Z" finished-at="2018-09-04T06:38:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTitle -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:impactQA.DemoTest@64763e49]" name="tearDown" is-config="true" duration-ms="3932" started-at="2018-09-04T06:38:31Z" finished-at="2018-09-04T06:38:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="IntilizeBrowser()[pri:0, instance:impactQA.DemoTest@64763e49]" name="IntilizeBrowser" is-config="true" duration-ms="25719" started-at="2018-09-04T06:38:35Z" finished-at="2018-09-04T06:39:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- IntilizeBrowser -->
+        <test-method status="PASS" signature="verifyLogin()[pri:1, instance:impactQA.DemoTest@64763e49]" name="verifyLogin" duration-ms="3436" started-at="2018-09-04T06:39:01Z" finished-at="2018-09-04T06:39:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLogin -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:impactQA.DemoTest@64763e49]" name="tearDown" is-config="true" duration-ms="1739" started-at="2018-09-04T06:39:04Z" finished-at="2018-09-04T06:39:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- impactQA.DemoTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
