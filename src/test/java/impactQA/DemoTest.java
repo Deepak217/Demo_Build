@@ -6,6 +6,8 @@ import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
 import static org.testng.Assert.fail;
 
+import java.io.File;
+
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -22,7 +24,7 @@ public class DemoTest {
 	@BeforeMethod
 	public void IntilizeBrowser() {
 		System.setProperty("webdriver.chrome.driver",
-				System.getProperty("user.dir") + "\\BinaryFiles\\chromedriver.exe");
+				System.getProperty("user.dir") + File.separator+ " BinaryFiles"+File.separator+"chromedriver.exe");
 		_driver = new ChromeDriver();
 		String url = "http://165.227.74.229/login";
 		_driver.get(url);
