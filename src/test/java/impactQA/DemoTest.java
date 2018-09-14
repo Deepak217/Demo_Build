@@ -24,7 +24,7 @@ public class DemoTest {
 	@BeforeMethod
 	public void IntilizeBrowser() {
 		System.setProperty("webdriver.chrome.driver",
-				System.getProperty("user.dir") + File.separator+ " BinaryFiles"+File.separator+"chromedriver.exe");
+				/*System.getProperty("user.dir")*/ "."+ File.separator+ " BinaryFiles"+File.separator+"chromedriver.exe");
 		_driver = new ChromeDriver();
 		String url = "http://165.227.74.229/login";
 		_driver.get(url);
