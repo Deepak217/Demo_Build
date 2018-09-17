@@ -10,6 +10,8 @@ import java.io.File;
 
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.*;
@@ -23,8 +25,30 @@ public class DemoTest {
 
 	@BeforeMethod
 	public void IntilizeBrowser() {
-		System.setProperty("webdriver.chrome.driver", "."+ File.separator+ " BinaryFiles"+File.separator+"chromedriver.exe");
-		_driver = new ChromeDriver();
+	
+		String oS=System.getProperty("os.name");
+		System.out.println("OS is "+oS);
+		
+		if(oS.contains("linux"))
+		{
+			 final ChromeOptions chromeOptions = new ChromeOptions();
+			    chromeOptions.setBinary("/path/to/google-chrome-stable");
+			    chromeOptions.addArguments("--headless");
+			    chromeOptions.addArguments("--disable-gpu");
+
+			    final DesiredCapabilities dc = new DesiredCapabilities();
+			    dc.setJavascriptEnabled(true);
+			    dc.setCapability(
+			        ChromeOptions.CAPABILITY, chromeOptions
+			    );
+
+			     _driver = new ChromeDriver(dc);
+		}
+		else
+		{
+			System.setProperty("webdriver.chrome.driver", "."+ File.separator+ " BinaryFiles"+File.separator+"chromedriver.exe");
+			_driver = new ChromeDriver();
+		}
 		String url = "http://165.227.74.229/login";
 		_driver.get(url);
 
