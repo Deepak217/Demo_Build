@@ -35,6 +35,10 @@ public class DemoTest {
 			    chromeOptions.setBinary("/usr/local/bin/chromedriver");
 			    chromeOptions.addArguments("--headless");
 			    chromeOptions.addArguments("--disable-gpu");
+			    chromeOptions.addArguments("--no-sandbox-");
+			    chromeOptions.addArguments("no-default-browser-check");
+			 /*   chromeOptions.addArguments("");*/
+
 
 			    final DesiredCapabilities dc = new DesiredCapabilities();
 			    dc.setJavascriptEnabled(true);
