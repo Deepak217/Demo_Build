@@ -32,7 +32,7 @@ public class DemoTest {
 		if(oS.contains("Linux"))
 		{
 			 final ChromeOptions chromeOptions = new ChromeOptions();
-			    chromeOptions.setBinary("/path/to/google-chrome-stable");
+			    chromeOptions.setBinary("/usr/local/bin/chromedriver");
 			    chromeOptions.addArguments("--headless");
 			    chromeOptions.addArguments("--disable-gpu");
 
