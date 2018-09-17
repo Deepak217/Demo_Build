@@ -29,7 +29,7 @@ public class DemoTest {
 		String oS=System.getProperty("os.name");
 		System.out.println("OS is "+oS);
 		
-		if(oS.contains("linux"))
+		if(oS.contains("Linux"))
 		{
 			 final ChromeOptions chromeOptions = new ChromeOptions();
 			    chromeOptions.setBinary("/path/to/google-chrome-stable");
