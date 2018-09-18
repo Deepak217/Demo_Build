@@ -8,6 +8,8 @@ import static org.testng.Assert.fail;
 
 import java.io.File;
 
+import javax.swing.plaf.synth.SynthScrollBarUI;
+
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -50,7 +52,9 @@ public class DemoTest {
 		}
 		else
 		{
-			System.setProperty("webdriver.chrome.driver", "."+ File.separator+ " BinaryFiles"+File.separator+"chromedriver.exe");
+			String path=  System.getProperty("user.dir")+File.separator+"BinaryFiles"+File.separator+"chromedriver.exe";
+			System.out.println(path);
+			System.setProperty("webdriver.chrome.driver", path);
 			_driver = new ChromeDriver();
 		}
 		String url = "http://165.227.74.229/login";
